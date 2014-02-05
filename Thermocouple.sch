@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 04 Feb 2014 11:04:27 PM EST
+EESchema Schematic File Version 2  date Tue 04 Feb 2014 11:45:57 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,8 +44,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2250 2050 2    60   Input ~ 0
+Text HLabel 5400 3400 0    60   Input ~ 0
+CS_N
+Text HLabel 5400 3200 0    60   Input ~ 0
+SCLK
+Text HLabel 5400 3000 0    60   Output ~ 0
+MISO
+Text HLabel 5400 2800 0    60   Input ~ 0
+MOSI
+Text HLabel 9600 3300 2    60   Input ~ 0
 TC-
-Text HLabel 2250 1800 2    60   Input ~ 0
+Text HLabel 9600 3050 2    60   Input ~ 0
 TC+
 $EndSCHEMATC
