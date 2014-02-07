@@ -29,6 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:arduino_shieldsNCL
+LIBS:spdt
 LIBS:InitialKiCadProject-cache
 EELAYER 27 0
 EELAYER END

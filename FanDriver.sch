@@ -29,6 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:arduino_shieldsNCL
+LIBS:spdt
 LIBS:InitialKiCadProject-cache
 EELAYER 27 0
 EELAYER END
@@ -158,11 +160,11 @@ Text HLabel 1950 3200 0    60   Input ~ 0
 FanIn
 Text HLabel 1650 5050 0    60   Output ~ 0
 TacOut
-Text HLabel 10700 5050 0    60   Input ~ 0
+Text HLabel 10700 5050 2    60   Input ~ 0
 TacIn
-Text HLabel 10900 3300 0    60   Input ~ 0
+Text HLabel 10700 3300 2    60   Input ~ 0
 PWR-
-Text HLabel 10850 2950 0    60   Output ~ 0
+Text HLabel 10700 2950 2    60   Output ~ 0
 PWR+
 Text HLabel 1950 3300 0    60   Output ~ 0
 CurrentMeasure
@@ -185,14 +187,22 @@ Wire Wire Line
 Wire Wire Line
 	6600 3300 6600 2500
 Wire Wire Line
-	1950 3300 10900 3300
+	1950 3300 6600 3300
+Wire Wire Line
+	6600 3300 7600 3300
+Wire Wire Line
+	7600 3300 10700 3300
 Wire Wire Line
 	7600 3750 7600 3300
 Wire Wire Line
 	10700 5050 1650 5050
 Connection ~ 5100 2300
 Wire Wire Line
-	5100 2150 5100 2400
+	5100 2150 5100 2200
+Wire Wire Line
+	5100 2200 5100 2300
+Wire Wire Line
+	5100 2300 5100 2400
 Wire Wire Line
 	5100 1450 5100 1650
 Wire Wire Line
@@ -202,9 +212,11 @@ Wire Wire Line
 Wire Wire Line
 	7050 2800 7050 2850
 Wire Wire Line
-	8400 2950 10850 2950
+	8400 2950 10700 2950
 Wire Wire Line
-	8400 2600 8400 2950
+	8400 2600 8400 2900
+Wire Wire Line
+	8400 2900 8400 2950
 Wire Wire Line
 	7650 2400 8100 2400
 Wire Wire Line
@@ -213,7 +225,9 @@ Connection ~ 8400 2900
 Wire Wire Line
 	7050 1750 7050 2000
 Wire Wire Line
-	5100 2300 6650 2300
+	5100 2300 6000 2300
+Wire Wire Line
+	6000 2300 6650 2300
 Connection ~ 6600 3300
 $Comp
 L R R?
@@ -248,7 +262,9 @@ Connection ~ 6000 2300
 Wire Wire Line
 	6000 3100 6000 3200
 Wire Wire Line
-	6000 3200 1950 3200
+	6000 3200 2350 3200
+Wire Wire Line
+	2350 3200 1950 3200
 Text HLabel 2050 1800 0    60   Output ~ 0
 MISO
 Text HLabel 2100 2050 0    60   Input ~ 0
