@@ -31,12 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino_shieldsNCL
 LIBS:spdt
+LIBS:BenchLib
 LIBS:InitialKiCadProject-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 9
 Title ""
 Date "7 feb 2014"
 Rev ""
@@ -208,17 +209,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 3150 7250 3150
 Connection ~ 7650 2800
-$Comp
-L +12V #PWR?
-U 1 1 52F44D6F
-P 7650 1300
-F 0 "#PWR?" H 7650 1250 20  0001 C CNN
-F 1 "+12V" H 7650 1400 30  0000 C CNN
-F 2 "" H 7650 1300 60  0000 C CNN
-F 3 "" H 7650 1300 60  0000 C CNN
-	1    7650 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7650 1300 7650 1650
 $Comp
@@ -267,4 +257,15 @@ Wire Wire Line
 Wire Wire Line
 	8050 3400 8450 3400
 Connection ~ 8450 3400
+$Comp
+L +12P #PWR?
+U 1 1 52F4581E
+P 7650 1300
+F 0 "#PWR?" H 7650 1270 30  0001 C CNN
+F 1 "+12P" H 7650 1400 30  0000 C CNN
+F 2 "" H 7650 1300 60  0000 C CNN
+F 3 "" H 7650 1300 60  0000 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

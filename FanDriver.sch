@@ -31,12 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino_shieldsNCL
 LIBS:spdt
+LIBS:BenchLib
 LIBS:InitialKiCadProject-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 9
 Title ""
 Date "7 feb 2014"
 Rev ""

@@ -1,4 +1,4 @@
-update=2/6/2014 9:40:30 PM
+update=2/6/2014 10:44:01 PM
 version=1
 last_client=eeschema
 [cvpcb]
@@ -86,3 +86,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=arduino_shieldsNCL
 LibName32=spdt
+LibName33=BenchLib

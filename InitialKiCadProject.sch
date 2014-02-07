@@ -31,12 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino_shieldsNCL
 LIBS:spdt
+LIBS:BenchLib
 LIBS:InitialKiCadProject-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date "7 feb 2014"
 Rev ""
@@ -116,5 +117,11 @@ F8 "MISO" I R 4050 5700 60
 F9 "MOSI" O R 4050 5600 60 
 F10 "Relay-" I R 4050 5300 60 
 F11 "Relay+" O R 4050 5150 60 
+$EndSheet
+$Sheet
+S 5000 1150 1850 1200
+U 52F452FD
+F0 "PowerAdjMon" 50
+F1 "PowerAdjMon.sch" 50
 $EndSheet
 $EndSCHEMATC
