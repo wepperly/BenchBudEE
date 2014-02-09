@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 08 Feb 2014 08:25:16 PM EST
+EESchema Schematic File Version 2  date Sat 08 Feb 2014 11:37:49 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -137,17 +137,17 @@ F 1 "LM324" H 7300 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 1950 3200 0    60   Input ~ 0
-FanIn
+FAN_EN
 Text HLabel 1650 5050 0    60   Output ~ 0
-TacOut
+TACH_MEASURE
 Text HLabel 10700 5050 2    60   Input ~ 0
-TacIn
-Text HLabel 10700 3300 2    60   Input ~ 0
-PWR-
+TACH_IN
+Text HLabel 10700 3300 2    60   Output ~ 0
+FAN_OUT-
 Text HLabel 10700 2950 2    60   Output ~ 0
-PWR+
+FAN_OUT+
 Text HLabel 1950 3300 0    60   Output ~ 0
-CurrentMeasure
+CURRENT_MEASURE
 $Comp
 L R R?
 U 1 1 52F43F3A

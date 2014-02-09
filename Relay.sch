@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 08 Feb 2014 08:25:16 PM EST
+EESchema Schematic File Version 2  date Sat 08 Feb 2014 11:37:49 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -46,14 +46,70 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	10750 2500 9750 2500
+Wire Wire Line
+	9750 2700 10750 2700
+Wire Wire Line
+	6350 3350 7350 3350
+Wire Wire Line
+	8950 2900 8450 2900
+Wire Wire Line
+	8450 2900 8450 3500
+Wire Wire Line
+	8450 3900 8450 4200
+Wire Wire Line
+	8450 4700 8450 4850
+Wire Wire Line
+	7000 4500 7000 4650
+Wire Wire Line
+	7000 3850 7000 4000
+Wire Wire Line
+	7000 3450 7000 3350
+Connection ~ 7000 3350
+Wire Wire Line
+	7650 2150 7650 3150
+Wire Wire Line
+	7650 2800 8950 2800
+Wire Wire Line
+	6350 3150 6750 3150
+Wire Wire Line
+	7650 3150 7250 3150
+Connection ~ 7650 2800
+Wire Wire Line
+	7650 1300 7650 1650
+Wire Wire Line
+	4600 3300 5250 3300
+Wire Wire Line
+	3400 3300 4100 3300
+Wire Wire Line
+	3400 2950 5250 2950
+Wire Wire Line
+	10750 2250 8800 2250
+Wire Wire Line
+	8800 2250 8800 2600
+Wire Wire Line
+	8800 2600 8950 2600
+Wire Wire Line
+	7850 3350 7850 3700
+Wire Wire Line
+	7850 3700 8150 3700
+Wire Wire Line
+	8050 2900 8050 2800
+Connection ~ 8050 2800
+Wire Wire Line
+	8050 3300 8050 3400
+Wire Wire Line
+	8050 3400 8450 3400
+Connection ~ 8450 3400
 Text HLabel 10750 2700 2    60   BiDi ~ 0
 NO
 Text HLabel 10750 2500 2    60   BiDi ~ 0
 NC
 Text HLabel 3400 3300 0    60   Output ~ 0
-DIN-
+COIL-
 Text HLabel 3400 2950 0    60   Input ~ 0
-DIN+
+COIL+
 $Comp
 L PHTRANS U?
 U 1 1 52F444EE
@@ -111,16 +167,6 @@ F 3 "~" H 9350 2850 60  0000 C CNN
 $EndComp
 Text HLabel 10750 2250 2    60   BiDi ~ 0
 Com
-Wire Wire Line
-	10750 2500 9750 2500
-Wire Wire Line
-	9750 2700 10750 2700
-Wire Wire Line
-	6350 3350 7350 3350
-Wire Wire Line
-	8950 2900 8450 2900
-Wire Wire Line
-	8450 2900 8450 3500
 $Comp
 L R R?
 U 1 1 52F44CA5
@@ -132,8 +178,6 @@ F 3 "~" H 8450 4450 30  0000 C CNN
 	1    8450 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 3900 8450 4200
 $Comp
 L GND #PWR?
 U 1 1 52F44CBC
@@ -143,8 +187,6 @@ F 1 "GND" H 8450 4780 30  0001 C CNN
 	1    8450 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 4700 8450 4850
 $Comp
 L R R?
 U 1 1 52F44D04
@@ -165,13 +207,6 @@ F 1 "GND" H 7000 4580 30  0001 C CNN
 	1    7000 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 4500 7000 4650
-Wire Wire Line
-	7000 3850 7000 4000
-Wire Wire Line
-	7000 3450 7000 3350
-Connection ~ 7000 3350
 NoConn ~ 7400 3750
 $Comp
 L R R?
@@ -184,10 +219,6 @@ F 3 "~" H 7650 1900 30  0000 C CNN
 	1    7650 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7650 2150 7650 3150
-Wire Wire Line
-	7650 2800 8950 2800
 $Comp
 L R R?
 U 1 1 52F44D45
@@ -199,13 +230,6 @@ F 3 "~" H 7000 3150 30  0000 C CNN
 	1    7000 3150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6350 3150 6750 3150
-Wire Wire Line
-	7650 3150 7250 3150
-Connection ~ 7650 2800
-Wire Wire Line
-	7650 1300 7650 1650
 $Comp
 L R R?
 U 1 1 52F44D8F
@@ -217,18 +241,6 @@ F 3 "~" H 4350 3300 30  0000 C CNN
 	1    4350 3300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4600 3300 5250 3300
-Wire Wire Line
-	3400 3300 4100 3300
-Wire Wire Line
-	3400 2950 5250 2950
-Wire Wire Line
-	10750 2250 8800 2250
-Wire Wire Line
-	8800 2250 8800 2600
-Wire Wire Line
-	8800 2600 8950 2600
 $Comp
 L DIODE D?
 U 1 1 52F44E37
@@ -240,18 +252,6 @@ F 3 "~" H 8050 3100 60  0000 C CNN
 	1    8050 3100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7850 3350 7850 3700
-Wire Wire Line
-	7850 3700 8150 3700
-Wire Wire Line
-	8050 2900 8050 2800
-Connection ~ 8050 2800
-Wire Wire Line
-	8050 3300 8050 3400
-Wire Wire Line
-	8050 3400 8450 3400
-Connection ~ 8450 3400
 $Comp
 L +12P #PWR?
 U 1 1 52F4581E
