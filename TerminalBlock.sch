@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 2  date Sat 08 Feb 2014 08:25:16 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,17 +29,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:arduino_shieldsNCL
 LIBS:spdt
 LIBS:BenchLib
 LIBS:InitialKiCadProject-cache
-EELAYER 27 0
+EELAYER 25  0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A4 11700 8267
 encoding utf-8
 Sheet 1 9
 Title ""
-Date "7 feb 2014"
+Date "9 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""

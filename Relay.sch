@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 2  date Sat 08 Feb 2014 08:25:16 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,17 +29,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:arduino_shieldsNCL
 LIBS:spdt
 LIBS:BenchLib
 LIBS:InitialKiCadProject-cache
-EELAYER 27 0
+EELAYER 25  0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A4 11700 8267
 encoding utf-8
 Sheet 6 9
 Title ""
-Date "7 feb 2014"
+Date "9 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -141,8 +140,6 @@ U 1 1 52F44CBC
 P 8450 4850
 F 0 "#PWR?" H 8450 4850 30  0001 C CNN
 F 1 "GND" H 8450 4780 30  0001 C CNN
-F 2 "" H 8450 4850 60  0000 C CNN
-F 3 "" H 8450 4850 60  0000 C CNN
 	1    8450 4850
 	1    0    0    -1  
 $EndComp
@@ -165,8 +162,6 @@ U 1 1 52F44D0A
 P 7000 4650
 F 0 "#PWR?" H 7000 4650 30  0001 C CNN
 F 1 "GND" H 7000 4580 30  0001 C CNN
-F 2 "" H 7000 4650 60  0000 C CNN
-F 3 "" H 7000 4650 60  0000 C CNN
 	1    7000 4650
 	1    0    0    -1  
 $EndComp
@@ -263,8 +258,6 @@ U 1 1 52F4581E
 P 7650 1300
 F 0 "#PWR?" H 7650 1270 30  0001 C CNN
 F 1 "+12P" H 7650 1400 30  0000 C CNN
-F 2 "" H 7650 1300 60  0000 C CNN
-F 3 "" H 7650 1300 60  0000 C CNN
 	1    7650 1300
 	1    0    0    -1  
 $EndComp
