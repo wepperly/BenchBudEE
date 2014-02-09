@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 08 Feb 2014 11:37:49 PM EST
+EESchema Schematic File Version 2  date Sun 09 Feb 2014 12:22:09 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 4 9
+Sheet 3 9
 Title ""
 Date "9 feb 2014"
 Rev ""
@@ -47,39 +47,149 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
+L +12C #PWR?
+U 1 1 52F70C33
+P 8400 700
+F 0 "#PWR?" H 8400 670 30  0001 C CNN
+F 1 "+12C" H 8400 810 40  0000 C CNN
+	1    8400 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 700  8400 850 
+Connection ~ 6000 2300
+Wire Wire Line
+	6000 2500 6000 2300
+Wire Wire Line
+	6000 2900 6000 3150
+Wire Wire Line
+	6650 2300 4550 2300
+Wire Wire Line
+	2000 5050 2000 6300
+Wire Wire Line
+	2000 5050 1650 5050
+Connection ~ 8400 3400
+Wire Wire Line
+	8400 3400 8050 3400
+Wire Wire Line
+	8050 3400 8050 3550
+Wire Wire Line
+	8400 3100 6500 3100
+Wire Wire Line
+	6650 2500 6500 2500
+Connection ~ 8400 1450
+Wire Wire Line
+	8400 1450 7900 1450
+Wire Wire Line
+	7900 1450 7900 1500
+Wire Wire Line
+	8400 2200 8400 1700
+Wire Wire Line
+	8400 1700 10500 1700
+Wire Wire Line
+	2600 2450 2350 2450
+Wire Wire Line
+	2350 2450 2350 2600
+Wire Wire Line
+	2100 2350 2600 2350
+Wire Wire Line
+	2100 2250 2600 2250
+Wire Wire Line
+	2100 2150 2600 2150
+Wire Wire Line
+	3700 2300 4050 2300
+Wire Wire Line
+	7050 1750 7050 2000
+Wire Wire Line
+	7650 2400 8100 2400
+Wire Wire Line
+	7050 2800 7050 2850
+Wire Wire Line
+	7050 2850 7300 2850
+Wire Wire Line
+	7300 2850 7300 2800
+Wire Wire Line
+	8400 4000 8400 4200
+Wire Wire Line
+	8400 1350 8400 1500
+Wire Wire Line
+	8400 1500 10500 1500
+Wire Wire Line
+	7900 1900 7900 1950
+Wire Wire Line
+	7900 1950 8400 1950
+Connection ~ 8400 1950
+Wire Wire Line
+	6500 2500 6500 3100
+Wire Wire Line
+	8400 3500 8400 2600
+Connection ~ 8400 3100
+Wire Wire Line
+	8400 3300 2000 3300
+Connection ~ 8400 3300
+Wire Wire Line
+	8050 3950 8050 4100
+Wire Wire Line
+	8050 4100 8400 4100
+Connection ~ 8400 4100
+Wire Wire Line
+	2000 6300 10550 6300
+Wire Wire Line
+	2350 3100 2350 3200
+Connection ~ 2350 3200
+Wire Wire Line
+	2000 3200 3900 3200
+Wire Wire Line
+	3900 3200 3900 2700
+Wire Wire Line
+	3900 2700 5700 2700
+Wire Wire Line
+	1950 3750 7750 3750
+Text HLabel 1950 3750 0    60   Output ~ 0
+FAN_MODE
+$Comp
+L MOSFET_N Q?
+U 1 1 52F70A55
+P 5900 2700
+F 0 "Q?" H 5910 2870 60  0000 R CNN
+F 1 "MOSFET_N" H 5910 2550 60  0000 R CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 52F708D5
+P 7900 1700
+F 0 "D?" H 7900 1800 40  0000 C CNN
+F 1 "DIODE" H 7900 1600 40  0000 C CNN
+	1    7900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52F70886
+P 8400 1100
+F 0 "TH?" V 8500 1150 50  0000 C CNN
+F 1 "THERMISTOR" V 8300 1100 50  0000 C CNN
+	1    8400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 52F707B3
+P 7950 3750
+F 0 "Q?" H 7960 3920 60  0000 R CNN
+F 1 "MOSFET_N" H 7960 3600 60  0000 R CNN
+	1    7950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
 L GND #PWR?
 U 1 1 52F31662
-P 4800 3000
-F 0 "#PWR?" H 4800 3000 30  0001 C CNN
-F 1 "GND" H 4800 2930 30  0001 C CNN
-	1    4800 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 52F31643
-P 5100 1900
-F 0 "R?" V 5180 1900 50  0000 C CNN
-F 1 "R" V 5100 1900 50  0000 C CNN
-	1    5100 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L POT RV?
-U 1 1 52F315F5
-P 5100 2650
-F 0 "RV?" H 5100 2550 50  0000 C CNN
-F 1 "POT" H 5100 2650 50  0000 C CNN
-	1    5100 2650
-	0    -1   1    0   
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 52F315D4
-P 5100 1450
-F 0 "#PWR?" H 5100 1400 20  0001 C CNN
-F 1 "+12V" H 5100 1550 30  0000 C CNN
-	1    5100 1450
+P 6000 3150
+F 0 "#PWR?" H 6000 3150 30  0001 C CNN
+F 1 "GND" H 6000 3080 30  0001 C CNN
+	1    6000 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -103,19 +213,10 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 52F313E3
-P 7600 4450
-F 0 "#PWR?" H 7600 4450 30  0001 C CNN
-F 1 "GND" H 7600 4380 30  0001 C CNN
-	1    7600 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 52F31370
-P 8400 1800
-F 0 "#PWR?" H 8400 1750 20  0001 C CNN
-F 1 "+12V" H 8400 1900 30  0000 C CNN
-	1    8400 1800
+P 8400 4200
+F 0 "#PWR?" H 8400 4200 30  0001 C CNN
+F 1 "GND" H 8400 4130 30  0001 C CNN
+	1    8400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -137,150 +238,60 @@ F 1 "LM324" H 7300 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 1950 3200 0    60   Input ~ 0
-FAN_EN
+FAN_PWM
 Text HLabel 1650 5050 0    60   Output ~ 0
 TACH_MEASURE
-Text HLabel 10700 5050 2    60   Input ~ 0
+Text HLabel 10550 6300 2    60   Input ~ 0
 TACH_IN
-Text HLabel 10700 3300 2    60   Output ~ 0
+Text HLabel 10500 1700 2    60   Output ~ 0
 FAN_OUT-
-Text HLabel 10700 2950 2    60   Output ~ 0
+Text HLabel 10500 1500 2    60   Output ~ 0
 FAN_OUT+
 Text HLabel 1950 3300 0    60   Output ~ 0
 CURRENT_MEASURE
 $Comp
 L R R?
 U 1 1 52F43F3A
-P 7600 4000
-F 0 "R?" V 7680 4000 50  0000 C CNN
-F 1 "R" V 7600 4000 50  0000 C CNN
-	1    7600 4000
+P 8400 3750
+F 0 "R?" V 8480 3750 50  0000 C CNN
+F 1 "R" V 8400 3750 50  0000 C CNN
+	1    8400 3750
 	1    0    0    -1  
 $EndComp
-Connection ~ 7600 3300
-Wire Wire Line
-	7600 4250 7600 4450
-Wire Wire Line
-	6600 2500 6650 2500
-Wire Wire Line
-	6600 3300 6600 2500
-Wire Wire Line
-	1950 3300 6600 3300
-Wire Wire Line
-	6600 3300 7600 3300
-Wire Wire Line
-	7600 3300 10700 3300
-Wire Wire Line
-	7600 3750 7600 3300
-Wire Wire Line
-	10700 5050 1650 5050
-Connection ~ 5100 2300
-Wire Wire Line
-	5100 2150 5100 2200
-Wire Wire Line
-	5100 2200 5100 2300
-Wire Wire Line
-	5100 2300 5100 2400
-Wire Wire Line
-	5100 1450 5100 1650
-Wire Wire Line
-	7300 2850 7300 2800
-Wire Wire Line
-	7050 2850 7300 2850
-Wire Wire Line
-	7050 2800 7050 2850
-Wire Wire Line
-	8400 2950 10700 2950
-Wire Wire Line
-	8400 2600 8400 2900
-Wire Wire Line
-	8400 2900 8400 2950
-Wire Wire Line
-	7650 2400 8100 2400
-Wire Wire Line
-	8400 1800 8400 2200
-Connection ~ 8400 2900
-Wire Wire Line
-	7050 1750 7050 2000
-Wire Wire Line
-	5100 2300 6000 2300
-Wire Wire Line
-	6000 2300 6650 2300
-Connection ~ 6600 3300
 $Comp
 L R R?
 U 1 1 52F4401D
-P 4300 2200
-F 0 "R?" V 4380 2200 50  0000 C CNN
-F 1 "R" V 4300 2200 50  0000 C CNN
-	1    4300 2200
+P 4300 2300
+F 0 "R?" V 4380 2300 50  0000 C CNN
+F 1 "R" V 4300 2300 50  0000 C CNN
+	1    4300 2300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3700 2200 4050 2200
-Wire Wire Line
-	4550 2200 5100 2200
-Connection ~ 5100 2200
-$Comp
-L R R?
-U 1 1 52F44054
-P 6000 2850
-F 0 "R?" V 6080 2850 50  0000 C CNN
-F 1 "R" V 6000 2850 50  0000 C CNN
-	1    6000 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 2600 6000 2300
-Connection ~ 6000 2300
-Wire Wire Line
-	6000 3100 6000 3200
-Wire Wire Line
-	6000 3200 2350 3200
-Wire Wire Line
-	2350 3200 1950 3200
-Text HLabel 2050 1800 0    60   Output ~ 0
+Text HLabel 2050 1900 0    60   Output ~ 0
 MISO
-Text HLabel 2100 2050 0    60   Input ~ 0
-MOSI
-Text HLabel 2100 2250 0    60   Input ~ 0
-CS_N
 Text HLabel 2100 2150 0    60   Input ~ 0
+MOSI
+Text HLabel 2100 2350 0    60   Input ~ 0
+CS_N
+Text HLabel 2100 2250 0    60   Input ~ 0
 S_CLK
 $Comp
 L MCP4921-E/SN U?
 U 1 1 52F441DE
-P 3150 2200
-F 0 "U?" H 3150 2550 40  0000 L BNN
-F 1 "MCP4921-E/SN" H 3150 2500 40  0000 L BNN
-F 2 "SO8" H 3150 2200 30  0000 C CIN
-	1    3150 2200
+P 3150 2300
+F 0 "U?" H 3150 2650 40  0000 L BNN
+F 1 "MCP4921-E/SN" H 3150 2600 40  0000 L BNN
+F 2 "SO8" H 3150 2300 30  0000 C CIN
+	1    3150 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 2050 2600 2050
-Wire Wire Line
-	2100 2150 2600 2150
-Wire Wire Line
-	2100 2250 2600 2250
 $Comp
 L R R?
 U 1 1 52F44272
-P 2350 2750
-F 0 "R?" V 2430 2750 50  0000 C CNN
-F 1 "R" V 2350 2750 50  0000 C CNN
-	1    2350 2750
+P 2350 2850
+F 0 "R?" V 2430 2850 50  0000 C CNN
+F 1 "R" V 2350 2850 50  0000 C CNN
+	1    2350 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 2500 2350 2350
-Wire Wire Line
-	2350 2350 2600 2350
-Wire Wire Line
-	2350 3000 2350 3200
-Connection ~ 2350 3200
-Wire Wire Line
-	4950 2650 4800 2650
-Wire Wire Line
-	4800 2650 4800 3000
 $EndSCHEMATC

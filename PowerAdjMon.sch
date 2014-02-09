@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 08 Feb 2014 11:37:49 PM EST
+EESchema Schematic File Version 2  date Sun 09 Feb 2014 12:22:09 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -47,6 +47,128 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
+L THERMISTOR TH?
+U 1 1 52F70C96
+P 3150 2250
+F 0 "TH?" V 3250 2300 50  0000 C CNN
+F 1 "THERMISTOR" V 3050 2250 50  0000 C CNN
+	1    3150 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52F70C94
+P 3150 2050
+F 0 "TH?" V 3250 2100 50  0000 C CNN
+F 1 "THERMISTOR" V 3050 2050 50  0000 C CNN
+	1    3150 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52F70C92
+P 3150 1850
+F 0 "TH?" V 3250 1900 50  0000 C CNN
+F 1 "THERMISTOR" V 3050 1850 50  0000 C CNN
+	1    3150 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52F70C8B
+P 2950 1650
+F 0 "TH?" V 3050 1700 50  0000 C CNN
+F 1 "THERMISTOR" V 2850 1650 50  0000 C CNN
+	1    2950 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +12C #PWR?
+U 1 1 52F70C06
+P 2600 1100
+F 0 "#PWR?" H 2600 1070 30  0001 C CNN
+F 1 "+12C" H 2600 1210 40  0000 C CNN
+	1    2600 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 2250
+Wire Wire Line
+	2600 2250 2600 1100
+Connection ~ 7200 2800
+Wire Wire Line
+	8150 2750 8150 2800
+Connection ~ 7200 1550
+Wire Wire Line
+	8150 1350 8150 1550
+Wire Wire Line
+	8150 1550 6900 1550
+Wire Wire Line
+	7200 1700 7200 1550
+Wire Wire Line
+	7200 2800 7200 2650
+Wire Wire Line
+	8150 2800 6850 2800
+Connection ~ 7200 2150
+Wire Wire Line
+	7200 2150 6600 2150
+Wire Wire Line
+	6600 2150 6600 2250
+Wire Wire Line
+	7200 2100 7200 2250
+Wire Wire Line
+	6300 1550 6050 1550
+Wire Wire Line
+	6050 1550 6050 1400
+Wire Wire Line
+	6250 2800 6100 2800
+Wire Wire Line
+	6100 2800 6100 2650
+Wire Wire Line
+	5350 2400 5350 2650
+Wire Wire Line
+	5350 2650 5100 2650
+Wire Wire Line
+	4150 2650 4600 2650
+Wire Wire Line
+	4400 3150 4400 2850
+Wire Wire Line
+	4400 2850 4150 2850
+Wire Wire Line
+	3150 2750 2750 2750
+Wire Wire Line
+	2750 2750 2750 2350
+Wire Wire Line
+	2750 2350 2500 2350
+Wire Wire Line
+	4350 1000 4350 2250
+Wire Wire Line
+	4350 2250 3400 2250
+Wire Wire Line
+	4000 1050 4000 2050
+Wire Wire Line
+	4000 2050 3400 2050
+Wire Wire Line
+	2500 2250 2900 2250
+Wire Wire Line
+	2500 2050 2900 2050
+Wire Wire Line
+	3700 1100 3700 1850
+Wire Wire Line
+	3700 1850 3400 1850
+Connection ~ 2650 1850
+Wire Wire Line
+	2650 1850 2650 1750
+Wire Wire Line
+	2650 1750 2500 1750
+Wire Wire Line
+	2500 1850 2900 1850
+Wire Wire Line
+	3400 1100 3400 1650
+Wire Wire Line
+	3400 1650 3200 1650
+Wire Wire Line
+	2500 1650 2700 1650
+$Comp
 L CONN_12X2 P?
 U 1 1 52F45305
 P 2100 2200
@@ -83,50 +205,6 @@ F 1 "+5V" H 3700 1190 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FUSE F?
-U 1 1 52F4550E
-P 2950 1650
-F 0 "F?" H 3050 1700 40  0000 C CNN
-F 1 "FUSE" H 2850 1600 40  0000 C CNN
-F 2 "~" H 2950 1650 60  0000 C CNN
-F 3 "~" H 2950 1650 60  0000 C CNN
-	1    2950 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L FUSE F?
-U 1 1 52F4551B
-P 3150 1850
-F 0 "F?" H 3250 1900 40  0000 C CNN
-F 1 "FUSE" H 3050 1800 40  0000 C CNN
-F 2 "~" H 3150 1850 60  0000 C CNN
-F 3 "~" H 3150 1850 60  0000 C CNN
-	1    3150 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L FUSE F?
-U 1 1 52F45521
-P 3150 2050
-F 0 "F?" H 3250 2100 40  0000 C CNN
-F 1 "FUSE" H 3050 2000 40  0000 C CNN
-F 2 "~" H 3150 2050 60  0000 C CNN
-F 3 "~" H 3150 2050 60  0000 C CNN
-	1    3150 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L FUSE F?
-U 1 1 52F45527
-P 3150 2250
-F 0 "F?" H 3250 2300 40  0000 C CNN
-F 1 "FUSE" H 3050 2200 40  0000 C CNN
-F 2 "~" H 3150 2250 60  0000 C CNN
-F 3 "~" H 3150 2250 60  0000 C CNN
-	1    3150 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L SWITCH_INV SW?
 U 1 1 52F4553E
 P 3650 2750
@@ -137,27 +215,6 @@ F 3 "~" H 3650 2750 60  0000 C CNN
 	1    3650 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 1650 2700 1650
-Wire Wire Line
-	3200 1650 3400 1650
-Wire Wire Line
-	3400 1650 3400 1100
-Wire Wire Line
-	2500 1850 2900 1850
-Wire Wire Line
-	2500 1750 2650 1750
-Wire Wire Line
-	2650 1750 2650 1850
-Connection ~ 2650 1850
-Wire Wire Line
-	3400 1850 3700 1850
-Wire Wire Line
-	3700 1850 3700 1100
-Wire Wire Line
-	2500 2050 2900 2050
-Wire Wire Line
-	2500 2250 2900 2250
 $Comp
 L +12V #PWR?
 U 1 1 52F455B9
@@ -167,10 +224,6 @@ F 1 "+12V" H 4000 1150 30  0000 C CNN
 	1    4000 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 2050 4000 2050
-Wire Wire Line
-	4000 2050 4000 1050
 $Comp
 L -12P #PWR?
 U 1 1 52F4597C
@@ -182,10 +235,6 @@ F 3 "~" H 4350 1000 60  0000 C CNN
 	1    4350 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 2250 4350 2250
-Wire Wire Line
-	4350 2250 4350 1000
 $Comp
 L R R?
 U 1 1 52F45B65
@@ -197,12 +246,6 @@ F 3 "~" H 4850 2650 30  0000 C CNN
 	1    4850 2650
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2500 2350 2750 2350
-Wire Wire Line
-	2750 2350 2750 2750
-Wire Wire Line
-	2750 2750 3150 2750
 $Comp
 L GND #PWR?
 U 1 1 52F45B85
@@ -212,12 +255,6 @@ F 1 "GND" H 4400 3080 30  0001 C CNN
 	1    4400 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 2850 4400 2850
-Wire Wire Line
-	4400 2850 4400 3150
-Wire Wire Line
-	4150 2650 4600 2650
 $Comp
 L +3.3V #PWR?
 U 1 1 52F45BD2
@@ -227,10 +264,6 @@ F 1 "+3.3V" H 5350 2510 30  0000 C CNN
 	1    5350 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 2650 5350 2650
-Wire Wire Line
-	5350 2650 5350 2400
 $Comp
 L INDUCTOR L?
 U 1 1 52F45DC2
@@ -304,29 +337,6 @@ F 3 "~" H 6100 2650 60  0000 C CNN
 	1    6100 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 2650 6100 2800
-Wire Wire Line
-	6100 2800 6250 2800
-Wire Wire Line
-	6050 1400 6050 1550
-Wire Wire Line
-	6050 1550 6300 1550
-Wire Wire Line
-	7200 2100 7200 2250
-Wire Wire Line
-	6600 2150 6600 2250
-Wire Wire Line
-	6600 2150 7200 2150
-Connection ~ 7200 2150
-Wire Wire Line
-	6850 2800 8150 2800
-Wire Wire Line
-	7200 2800 7200 2650
-Wire Wire Line
-	7200 1700 7200 1550
-Wire Wire Line
-	6900 1550 8150 1550
 $Comp
 L +12V #PWR?
 U 1 1 52F45F1F
@@ -345,10 +355,4 @@ F 1 "-12V" H 8150 2850 30  0000 C CNN
 	1    8150 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8150 1550 8150 1350
-Connection ~ 7200 1550
-Wire Wire Line
-	8150 2800 8150 2750
-Connection ~ 7200 2800
 $EndSCHEMATC
